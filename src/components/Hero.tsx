@@ -12,9 +12,8 @@ const Hero = () => {
             </div>
             
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-dark-900 leading-tight">
-              Krishav
-              <br />
-              <span className="text-primary-500">Singla</span>
+              Hi, I'm <br />
+              <span className="text-primary-500">Krishav Singla</span>
             </h1>
             
             <div className="space-y-2 font-mono text-sm text-dark-600">
@@ -30,12 +29,6 @@ const Hero = () => {
             
             {/* Contact Buttons */}
             <div className="flex flex-wrap gap-3 pt-4">
-              <a
-                href="mailto:krishavs@wharton.upenn.edu"
-                className="px-6 py-3 bg-dark-900 text-white font-medium border-2 border-dark-900 hover:bg-white hover:text-dark-900 transition-all"
-              >
-                Get in Touch
-              </a>
               <a
                 href="https://www.linkedin.com/in/krishavs"
                 target="_blank"
@@ -55,30 +48,8 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right side - Stats */}
+          {/* Right side - Contact Info */}
           <div className="space-y-4 animate-slide-in-right">
-            <div className="border-4 border-dark-900 p-8 bg-primary-50">
-              <div className="space-y-6">
-                <div className="border-b-2 border-dark-900 pb-4">
-                  <div className="font-mono text-sm text-dark-600 mb-1">[ CURRENT_GPA ]</div>
-                  <div className="text-5xl font-bold text-dark-900">3.94</div>
-                  <div className="text-dark-600 mt-1">out of 4.00</div>
-                </div>
-                
-                <div className="border-b-2 border-dark-900 pb-4">
-                  <div className="font-mono text-sm text-dark-600 mb-1">[ APP_DOWNLOADS ]</div>
-                  <div className="text-5xl font-bold text-primary-600">3,000+</div>
-                  <div className="text-dark-600 mt-1">Access Wayfinder</div>
-                </div>
-                
-                <div>
-                  <div className="font-mono text-sm text-dark-600 mb-1">[ GRADUATION ]</div>
-                  <div className="text-5xl font-bold text-dark-900">2028</div>
-                  <div className="text-dark-600 mt-1">Expected May</div>
-                </div>
-              </div>
-            </div>
-            
             <div className="border-4 border-dark-900 p-6 bg-white">
               <div className="font-mono text-sm text-dark-600 mb-2">[ CONTACT_INFO ]</div>
               <div className="space-y-1 text-sm text-dark-700">

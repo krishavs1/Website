@@ -12,7 +12,7 @@ const Projects = () => {
         'Downloaded 3000+ times with 5.0 star average',
         'Featured on PBS, NJ.com, and the Star-Ledger'
       ],
-      stats: { downloads: '3,000+', rating: '5.0★', cities: '9' },
+      stats: { downloads: '3,000+', rating: '5.0★', businesses: '750+' },
       link: '/projects/access-wayfinder'
     },
     {

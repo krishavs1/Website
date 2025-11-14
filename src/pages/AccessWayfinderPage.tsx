@@ -37,8 +37,8 @@ const AccessWayfinderPage = () => {
               <div className="text-sm text-dark-600 mt-1">Rating</div>
             </div>
             <div className="p-6 text-center bg-primary-50">
-              <div className="text-3xl font-bold text-dark-900">9</div>
-              <div className="text-sm text-dark-600 mt-1">Cities</div>
+              <div className="text-3xl font-bold text-dark-900">750+</div>
+              <div className="text-sm text-dark-600 mt-1">Businesses</div>
             </div>
           </div>
 
@@ -46,7 +46,7 @@ const AccessWayfinderPage = () => {
             <h2 className="text-2xl font-bold text-dark-900 mb-4">Overview</h2>
             <p className="text-dark-700 text-lg leading-relaxed">
               Access Wayfinder is an iOS accessibility guide mobile app designed to help users discover 
-              wheelchair-accessible businesses and public spaces across 9 New Jersey cities. The app addresses 
+              wheelchair-accessible businesses and public spaces across New Jersey. The app addresses 
               a critical need in the accessibility community by providing real-time information about accessible 
               locations, helping people with mobility challenges navigate their communities with confidence.
             </p>
