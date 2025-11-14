@@ -1,21 +1,27 @@
 const Skills = () => {
-  const skillCategories = [
-    {
-      title: 'Languages',
-      skills: ['Python', 'SQL', 'Java', 'JavaScript', 'TypeScript', 'HTML/CSS', 'OCaml', 'Rust', 'MATLAB']
-    },
-    {
-      title: 'Technologies',
-      skills: ['AWS', 'TensorFlow', 'PyTorch', 'Node.js', 'React', 'React Native', 'Expo', 'Jupyter']
-    },
-    {
-      title: 'Engineering',
-      skills: ['SOLIDWORKS', 'Ansys', 'CNC Machining', 'Laser Cutting', '3D Printing', 'Fusion 360', 'GD&T', 'MasterCAM']
-    },
-    {
-      title: 'Languages (Spoken)',
-      skills: ['English (Native)', 'Hindi/Urdu (Bilingual)', 'Spanish (Limited Professional)']
-    }
+  const skills = [
+    // Programming Languages
+    { name: 'Python', level: 90, category: 'Languages' },
+    { name: 'JavaScript/TypeScript', level: 85, category: 'Languages' },
+    { name: 'HTML/CSS', level: 85, category: 'Languages' },
+    { name: 'Swift', level: 80, category: 'Languages' },
+    { name: 'SQL', level: 80, category: 'Languages' },
+    { name: 'Java', level: 75, category: 'Languages' },
+    { name: 'C/C++', level: 60, category: 'Languages' },
+    { name: 'Rust', level: 40, category: 'Languages' },
+    { name: 'OCaml', level: 30, category: 'Languages' },
+    
+    // Technologies (combined Web/App Dev, ML & Data, Cloud)
+    { name: 'React Native', level: 90, category: 'Technologies' },
+    { name: 'Expo', level: 90, category: 'Technologies' },
+    { name: 'React', level: 85, category: 'Technologies' },
+    { name: 'Jupyter', level: 80, category: 'Technologies' },
+    { name: 'Pandas/NumPy', level: 75, category: 'Technologies' },
+    { name: 'Node.js', level: 75, category: 'Technologies' },
+    { name: 'ASP.NET Core', level: 70, category: 'Technologies' },
+    { name: 'TensorFlow/PyTorch', level: 70, category: 'Technologies' },
+    { name: 'Scikit-learn', level: 65, category: 'Technologies' },
+    { name: 'AWS', level: 65, category: 'Technologies' },
   ];
 
   const interests = [
@@ -29,6 +35,16 @@ const Skills = () => {
     'Outdoor Activities'
   ];
 
+  const getCategoryColor = (category: string) => {
+    const colors: { [key: string]: string } = {
+      'Languages': 'bg-primary-500',
+      'Technologies': 'bg-green-500',
+    };
+    return colors[category] || 'bg-dark-900';
+  };
+
+  const categories = Array.from(new Set(skills.map(s => s.category)));
+
   return (
     <section id="skills" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,48 +57,51 @@ const Skills = () => {
           </h2>
         </div>
         
-        <div className="max-w-6xl">
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
-            {skillCategories.map((category, index) => (
-              <div
-                key={index}
-                className="border-4 border-dark-900 bg-white"
-              >
+        <div className="max-w-6xl space-y-6 mb-8">
+          {categories.map((category) => {
+            const categorySkills = skills
+              .filter(s => s.category === category)
+              .sort((a, b) => b.level - a.level); // Sort by percentage descending
+            return (
+              <div key={category} className="border-4 border-dark-900 bg-white">
                 <div className="border-b-4 border-dark-900 p-4 bg-dark-900">
-                  <h3 className="font-mono text-sm text-primary-500">[[ {category.title.toUpperCase()} ]]</h3>
+                  <h3 className="font-mono text-sm text-primary-500">{`[[ ${category.toUpperCase()} ]]`}</h3>
                 </div>
-                <div className="p-6">
-                  <div className="flex flex-wrap gap-2">
-                    {category.skills.map((skill, i) => (
-                      <span
-                        key={i}
-                        className="px-3 py-1 text-sm border-2 border-dark-900 text-dark-900 hover:bg-primary-500 hover:text-white hover:border-primary-500 transition-colors"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
+                <div className="p-6 space-y-4">
+                  {categorySkills.map((skill, i) => (
+                    <div key={i}>
+                      <div className="mb-2">
+                        <span className="text-sm font-medium text-dark-900">{skill.name}</span>
+                      </div>
+                      <div className="w-full h-6 bg-dark-200 border-2 border-dark-900 relative">
+                        <div
+                          className={`h-full ${getCategoryColor(category)} transition-all duration-500`}
+                          style={{ width: `${skill.level}%` }}
+                        />
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
-            ))}
-          </div>
+            );
+          })}
+        </div>
 
-          {/* Interests Section */}
-          <div className="border-4 border-dark-900 bg-primary-50">
-            <div className="border-b-4 border-dark-900 p-4 bg-primary-500">
-              <h3 className="font-mono text-sm text-white">[[ ACTIVITIES & INTERESTS ]]</h3>
-            </div>
-            <div className="p-6">
-              <div className="flex flex-wrap gap-2">
-                {interests.map((interest, i) => (
-                  <span
-                    key={i}
-                    className="px-3 py-1 text-sm border-2 border-dark-900 bg-white text-dark-900"
-                  >
-                    {interest}
-                  </span>
-                ))}
-              </div>
+        {/* Interests Section */}
+        <div className="border-4 border-dark-900 bg-primary-50">
+          <div className="border-b-4 border-dark-900 p-4 bg-primary-500">
+            <h3 className="font-mono text-sm text-white">[[ ACTIVITIES & INTERESTS ]]</h3>
+          </div>
+          <div className="p-6">
+            <div className="flex flex-wrap gap-2">
+              {interests.map((interest, i) => (
+                <span
+                  key={i}
+                  className="px-3 py-1 text-sm border-2 border-dark-900 bg-white text-dark-900"
+                >
+                  {interest}
+                </span>
+              ))}
             </div>
           </div>
         </div>
