@@ -7,7 +7,7 @@ const Hero = () => {
           <div className="space-y-6 animate-slide-in-left">
             <div className="inline-block">
               <span className="font-mono text-sm text-primary-600 bg-primary-50 px-3 py-1 border-2 border-primary-500">
-                Software Engineer & Student
+                Engineer, Builder, Researcher
               </span>
             </div>
             

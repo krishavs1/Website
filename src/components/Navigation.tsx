@@ -31,7 +31,7 @@ const Navigation = () => {
     setIsMobileMenuOpen(false);
   };
 
-  const navItems = ['About', 'Education', 'Experience', 'Projects', 'Skills'];
+  const navItems = ['About', 'Education', 'Projects', 'Skills'];
 
   return (
     <nav
