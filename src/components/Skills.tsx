@@ -1,6 +1,6 @@
 const Skills = () => {
   const skills = [
-    // Programming Languages
+    
     { name: 'Python', level: 90, category: 'Languages' },
     { name: 'JavaScript/TypeScript', level: 85, category: 'Languages' },
     { name: 'HTML/CSS', level: 85, category: 'Languages' },
