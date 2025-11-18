@@ -20,7 +20,7 @@ const Education = () => {
                     University of Pennsylvania
                   </h3>
                   <p className="text-lg font-semibold text-white/90">
-                    Jerome Fisher Management & Technology Program
+                    Jerome Fisher Program in Management & Technology
                   </p>
                 </div>
               </div>
