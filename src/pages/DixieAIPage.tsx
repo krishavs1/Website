@@ -82,8 +82,7 @@ const DixieAIPage = () => {
                 <p className="text-dark-700 ml-6">
                   Integrated OpenAI's GPT-4o-mini model to generate accurate, context-aware email summaries. 
                   The AI analyzes email content, extracts key points, identifies action items, and presents 
-                  information in a concise, voice-friendly format. Implements smart batching for processing 
-                  multiple emails efficiently.
+                  information in a concise, voice-friendly format.
                 </p>
               </div>
 
