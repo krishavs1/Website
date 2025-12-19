@@ -27,11 +27,24 @@ const Projects = () => {
       ],
       stats: { tech: 'AI/ML', status: 'In Development', api: 'GPT-4o' },
       link: '/projects/dixie-ai'
+    },
+    {
+      title: 'SubletHub',
+      tech: 'SwiftUI · Firebase · JavaScript · Google Cloud',
+      description: 'Mobile app helping college students sublet their apartments or dorms during the summer to other students interning or studying nearby.',
+      achievements: [
+        'Built native iOS app with SwiftUI for intuitive user interface and smooth navigation',
+        'Implemented Firebase backend with JavaScript for real-time data synchronization and user authentication',
+        'Developed search and filtering system allowing users to browse sublets by location, price, and availability',
+        'Deployed backend infrastructure on Google Cloud Platform for scalable and reliable service'
+      ],
+      stats: { platform: 'iOS', backend: 'Firebase', deployment: 'GCP' },
+      link: '/projects/sublethub'
     }
   ];
 
   return (
-    <section id="projects" className="py-20 bg-dark-50">
+    <section id="projects" className="py-20 bg-dark-50 relative z-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
           <span className="font-mono text-sm text-primary-600 bg-primary-50 px-3 py-1 border-2 border-primary-500">

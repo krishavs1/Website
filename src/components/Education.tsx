@@ -1,6 +1,6 @@
 const Education = () => {
   return (
-    <section id="education" className="py-20 bg-dark-50">
+    <section id="education" className="py-20 bg-dark-50 relative z-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
           <span className="font-mono text-sm text-primary-600 bg-primary-50 px-3 py-1 border-2 border-primary-500">

@@ -15,10 +15,7 @@ const DixieAIPage = () => {
         {/* Project Header */}
         <div className="border-4 border-dark-900 mb-8">
           <div className="bg-dark-900 border-b-4 border-dark-900 p-8">
-            <span className="font-mono text-xs text-dark-900 bg-primary-500 px-3 py-1 border-2 border-primary-500">
-              PROJECT_02
-            </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mt-4 mb-2">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">
               DixieAI
             </h1>
             <p className="font-mono text-sm text-white/90">
