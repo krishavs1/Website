@@ -51,7 +51,7 @@ const Footer = () => {
         
         <div className="mt-8 pt-8 border-t-2 border-dark-700 text-center">
           <p className="text-dark-400 text-sm font-mono">
-            © 2025 Krishav Singla · Built with React + TypeScript + Tailwind
+            © 2025 Krishav Singla · Built with React + Tailwind
           </p>
         </div>
       </div>
