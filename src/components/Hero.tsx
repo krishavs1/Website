@@ -15,12 +15,6 @@ const Hero = () => {
               Hi, I'm <br />
               <span className="text-primary-500">Krishav Singla</span>
             </h1>
-            
-            <div className="space-y-2 font-mono text-sm text-dark-600">
-              <p>→ CS & Finance @ UPenn</p>
-              <p>→ Jerome Fisher M&T Program</p>
-              <p>→ GPA: 3.94/4.00</p>
-            </div>
 
             <p className="text-lg text-dark-700 max-w-xl border-l-4 border-primary-500 pl-4">
               Building software that matters. Interested in AI/ML, full-stack development, 
@@ -53,9 +47,9 @@ const Hero = () => {
             <div className="border-4 border-dark-900 p-6 bg-white">
               <div className="font-mono text-sm text-dark-600 mb-2">[ CONTACT_INFO ]</div>
               <div className="space-y-1 text-sm text-dark-700">
-                <p>📧 krishavs@wharton.upenn.edu</p>
-                <p>📍 Philadelphia, PA</p>
-                <p>🏠 Westfield, NJ</p>
+                <p>krishavs@wharton.upenn.edu</p>
+                <p>(908) 873-4555</p>
+                <p>Philadelphia, PA</p>
               </div>
             </div>
           </div>
