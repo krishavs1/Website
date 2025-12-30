@@ -65,7 +65,7 @@ const Education = () => {
               <div className="border-2 border-dark-900 p-4 bg-white">
                 <div className="font-mono text-xs text-primary-600 mb-2">[ ACTIVITIES ]</div>
                 <div className="space-y-1">
-                  <p className="text-xs text-dark-700">• Penn Electric Racing (Vehicle Dynamics Engineer)</p>
+                  <p className="text-xs text-dark-700">• Penn Electric Racing (Driver Interface and Vehicle Dynamics)</p>
                   <p className="text-xs text-dark-700">• M&T Innovation Fund (Co-leader/Analyst)</p>
                   <p className="text-xs text-dark-700">• Wharton Undergraduate Healthcare Club (VP of Entrepreneurship Incubator)</p>
                   <p className="text-xs text-dark-700">• Penn Adaptive Technologies and Prosthetic Technologies (Bionic Arm)</p>
